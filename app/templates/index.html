@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "body.html" %}
+{% block content %}
+    <h1>hello {{ user.username }}</h1>
+    <p>this is index.html</p>
+    {% for post in posts %}
+        <div><p>{{ post.author.username }} say: <span style="background-color: blue;"> {{ post.body }}</span></p></div>
+    {% endfor %}
+{% endblock %}

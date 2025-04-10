@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends "body.html" %}
+{% block content %}
+    <h1>Hello {{ form.name }}</h1>
+    <p>This is form.html</p>
+    <form action="/post" method="POST">
+        <p>Your name: <input type="text" name="name" required></p>
+        <p>Your age: <input type="number" name="age" required></p>
+        <p>Your agree: <input type="text" name="agree" required></p>
+        <p>message: <input type="text" name="something" placeholder="Enter something" required></p>
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
